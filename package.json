@@ -4,9 +4,7 @@
   "description": "",
   "main": "index.js",
   "workspaces": [
-    "./packages",
-    "packages/simple-web3-script",
-    "packages/sendtx-example"
+    "./packages/*"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
