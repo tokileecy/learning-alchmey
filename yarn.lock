@@ -9323,9 +9323,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"hello-world@workspace:packages/hello-world":
+"hello-world@workspace:tutorials/hello-world":
   version: 0.0.0-use.local
-  resolution: "hello-world@workspace:packages/hello-world"
+  resolution: "hello-world@workspace:tutorials/hello-world"
   dependencies:
     "@nomiclabs/hardhat-ethers": ^2.0.5
     dotenv: ^16.0.0
@@ -12467,22 +12467,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"minter-starter-files@workspace:packages/minter-starter-files":
-  version: 0.0.0-use.local
-  resolution: "minter-starter-files@workspace:packages/minter-starter-files"
-  dependencies:
-    "@testing-library/jest-dom": ^5.11.4
-    "@testing-library/react": ^11.1.0
-    "@testing-library/user-event": ^12.1.10
-    axios: ^0.21.1
-    dotenv: ^16.0.0
-    react: ^17.0.2
-    react-dom: ^17.0.2
-    react-scripts: 4.0.3
-    web-vitals: ^1.0.1
-  languageName: unknown
-  linkType: soft
-
 "mississippi@npm:^3.0.0":
   version: 3.0.0
   resolution: "mississippi@npm:3.0.0"
@@ -12695,9 +12679,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"my-nft@workspace:packages/my-nft":
+"my-nft@workspace:tutorials/my-nft":
   version: 0.0.0-use.local
-  resolution: "my-nft@workspace:packages/my-nft"
+  resolution: "my-nft@workspace:tutorials/my-nft"
   dependencies:
     "@nomiclabs/hardhat-ethers": ^2.0.5
     "@openzeppelin/contracts": 3.1.0-solc-0.7
@@ -12797,9 +12781,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nft-minter@workspace:packages/nft-minter":
+"nft-minter@workspace:tutorials/nft-minter":
   version: 0.0.0-use.local
-  resolution: "nft-minter@workspace:packages/nft-minter"
+  resolution: "nft-minter@workspace:tutorials/nft-minter"
   dependencies:
     "@alch/alchemy-web3": ^1.0.1
     "@testing-library/jest-dom": ^5.11.4
@@ -16198,15 +16182,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sendtx-example@workspace:packages/sendtx-example":
-  version: 0.0.0-use.local
-  resolution: "sendtx-example@workspace:packages/sendtx-example"
-  dependencies:
-    "@alch/alchemy-web3": ^1.2.5
-    dotenv: ^16.0.0
-  languageName: unknown
-  linkType: soft
-
 "serialize-javascript@npm:6.0.0":
   version: 6.0.0
   resolution: "serialize-javascript@npm:6.0.0"
@@ -16424,9 +16399,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"simple-web3-script@workspace:packages/simple-web3-script":
+"simple-web3-script@workspace:tutorials/simple-web3-script":
   version: 0.0.0-use.local
-  resolution: "simple-web3-script@workspace:packages/simple-web3-script"
+  resolution: "simple-web3-script@workspace:tutorials/simple-web3-script"
   dependencies:
     "@alch/alchemy-web3": ^1.2.5
   languageName: unknown
@@ -17558,9 +17533,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"truffle-hello-world@workspace:packages/truffle-hello-world":
+"truffle-hello-world@workspace:tutorials/truffle-hello-world":
   version: 0.0.0-use.local
-  resolution: "truffle-hello-world@workspace:packages/truffle-hello-world"
+  resolution: "truffle-hello-world@workspace:tutorials/truffle-hello-world"
   dependencies:
     "@truffle/hdwallet-provider": ^2.0.3
     dotenv: ^16.0.0
