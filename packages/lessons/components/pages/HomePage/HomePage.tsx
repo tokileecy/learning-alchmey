@@ -1,7 +1,7 @@
 import { Box, Grid } from '@mui/material'
 import Layout from '../../Layout'
-import LatestBlockCard from './LatestBlockCard'
-import WalletConnectCard from './WalletConnectCard'
+import LatestBlockCard from './Cards/LatestBlockCard'
+import WalletConnectCard from './Cards/WalletConnectCard'
 
 const HomePage = () => {
   return (
