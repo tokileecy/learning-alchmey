@@ -6,9 +6,7 @@ import ProgressButton from '../../ProgressButton'
 const LatestBlockCard = () => {
   const [progressing, setProgressing] = useState(false)
 
-  const [latestBlock, setLatestBlock] = useState<string>(
-    'Click Button to get Latest Block Number'
-  )
+  const [latestBlock, setLatestBlock] = useState<string>('')
 
   const handleClick = async () => {
     setProgressing(true)
