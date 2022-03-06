@@ -1,14 +1,21 @@
 import { useState } from 'react'
-import { Typography, Box, Button, Card } from '@mui/material'
+import { Typography, Box, Card } from '@mui/material'
 import { getLatestBlock } from '../../../utils'
+import ProgressButton from '../../ProgressButton'
 
 const LatestBlockCard = () => {
+  const [progressing, setProgressing] = useState(false)
+
   const [latestBlock, setLatestBlock] = useState<string>(
     'Click Button to get Latest Block Number'
   )
 
   const handleClick = async () => {
+    setProgressing(true)
+
     const latestBlock = (await getLatestBlock()).toString()
+
+    setProgressing(false)
 
     setLatestBlock(latestBlock)
   }
@@ -27,7 +34,7 @@ const LatestBlockCard = () => {
         </Typography>
       </Box>
       <Typography variant="body1" sx={{ fontSize: 18 }}>
-        {latestBlock}
+        Block number: {latestBlock}
       </Typography>
       <Box
         sx={{
@@ -36,9 +43,9 @@ const LatestBlockCard = () => {
           paddingTop: 4,
         }}
       >
-        <Button variant="contained" onClick={handleClick}>
+        <ProgressButton isProgressing={progressing} onClick={handleClick}>
           Get Latest Block Number
-        </Button>
+        </ProgressButton>
       </Box>
     </Card>
   )
