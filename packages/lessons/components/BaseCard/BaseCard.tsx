@@ -3,7 +3,7 @@ import { Typography, Card, CardActions, CardContent } from '@mui/material'
 import ProgressButton, { ProgressButtonProps } from '../ProgressButton'
 
 export interface BaseCardProps {
-  actionButtonProps: ProgressButtonProps
+  actionButtonProps?: ProgressButtonProps
   children?: ReactNode
   title?: ReactNode
 }
@@ -25,15 +25,17 @@ const BaseCard = (props: BaseCardProps): JSX.Element => {
         </Typography>
         {children}
       </CardContent>
-      <CardActions
-        sx={{
-          display: 'flex',
-          justifyContent: 'flex-end',
-          paddingTop: 4,
-        }}
-      >
-        <ProgressButton {...actionButtonProps} />
-      </CardActions>
+      {actionButtonProps && (
+        <CardActions
+          sx={{
+            display: 'flex',
+            justifyContent: 'flex-end',
+            paddingTop: 4,
+          }}
+        >
+          <ProgressButton {...actionButtonProps} />
+        </CardActions>
+      )}
     </Card>
   )
 }

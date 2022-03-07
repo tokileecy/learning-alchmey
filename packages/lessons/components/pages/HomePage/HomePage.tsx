@@ -2,6 +2,7 @@ import { Box, Grid } from '@mui/material'
 import Layout from '../../Layout'
 import LatestBlockCard from './Cards/LatestBlockCard'
 import WalletConnectCard from './Cards/WalletConnectCard'
+import TransfersCard from './Cards/TransfersCard'
 
 const HomePage = () => {
   return (
@@ -14,17 +15,19 @@ const HomePage = () => {
             justifyContent: 'center',
           }}
         >
-          <Grid item sm={8}>
-            <LatestBlockCard />
-          </Grid>
           <Grid
             item
             sm={8}
             sx={{
-              mt: 4,
+              display: 'grid',
+              gridTemplateAreas: '1fr',
+              gridAutoRows: 'minmax(250px, auto)',
+              gap: 4,
             }}
           >
+            <LatestBlockCard />
             <WalletConnectCard />
+            <TransfersCard />
           </Grid>
         </Grid>
       </Box>

@@ -27,7 +27,7 @@ const Layout = (props: LayoutProps): JSX.Element => {
       </AppBar>
       <Container
         sx={{
-          paddingTop: 4,
+          p: 4,
         }}
       >
         {children}
